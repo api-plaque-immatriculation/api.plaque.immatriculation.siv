@@ -1,1 +1,78 @@
 
+API Plaque d’Immatriculation Espagne 🇪🇸
+Obtenez des informations complètes et précises sur les véhicules en Espagne grâce à notre API de recherche par plaque d’immatriculation. Profitez d’un accès en temps réel à plus de 80 champs de données essentielles, garantissant une fiabilité à 100 %. Simplifiez vos vérifications et optimisez votre gestion automobile avec notre solution performante et intuitive.
+
+Utilisez le code ISO du pays pour interroger notre API internationale.
+
+
+<?php
+$curl = curl_init();
+curl_setopt_array($curl, array(
+  CURLOPT_URL => 'https://api.apiplaqueimmatriculation.com/get-vehicule-info?immatriculation=1234BCD&token=TokenDemo2025&pays=ES',
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => '',
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 0,
+  CURLOPT_FOLLOWLOCATION => true,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => 'POST'
+));
+$response = curl_exec($curl);
+curl_close($curl);
+echo $response;
+?>
+
+
+
+{
+  "data": {
+    "erreur": "",
+    "immat": "1234BCD",
+    "pays": "ES",
+    "marque": "AUDI",
+    "modele": "A4 B5 (8D2)",
+    "date1erCir_us": "",
+    "date1erCir_fr": "",
+    "co2": "",
+    "energie": "2",
+    "energieNGC": "Diesel",
+    "genreVCG": "",
+    "genreVCGNGC": "",
+    "puisFisc": "",
+    "carrosserieCG": "",
+    "puisFiscReelKW": "66 KW",
+    "puisFiscReelCH": "90 CH",
+    "collection": "",
+    "date30": "",
+    "vin": "WAUZZZ8DZVA171951",
+    "variante": "ZZZ8DZ",
+    "boite_vitesse": "",
+    "code_boite_vitesse": "",
+    "nr_passagers": "",
+    "nb_portes": "0",
+    "type_mine": "",
+    "cnit": "",
+    "couleur": "",
+    "poids": "",
+    "ccm": "1595 CM3",
+    "cylindres": "",
+    "sra_id": "",
+    "sra_group": "",
+    "sra_commercial": "A4 B5 (8D2) 1.9 TDI",
+    "numero_serie": "VA171951",
+    "ptac": "",
+    "logo_marque": "https://api.apiplaqueimmatriculation.com/public/storage/logos_marques/?marque=audi",
+    "k_type": "4618",
+    "tecdoc_manuid": "5",
+    "tecdoc_modelid": "253",
+    "tecdoc_carid": "4618",
+    "code_moteur": "AFF_|_1Z_|_AHU_|_AHH_|_AFN_|_AVG",
+    "codes_platforme": "8D2",
+    "nbr_req_restants": 72
+  },
+  "api-version": "1.0.0"
+}
+
+
+Obtenez des informations complètes et précises sur les véhicules en Espagne grâce à notre API plaque immatriculation Espagne.
+🔍 En saisissant simplement une immatriculation véhicule Espagne, accédez en temps réel à plus de 80 champs de données essentielles. Que ce soit pour une recherche plaque Espagne ou pour récupérer des informations détaillées sur un véhicule espagnol, notre solution garantit fiabilité et performance. Simplifiez vos démarches avec l’API immatriculation Espagne la plus avancée du marché.
