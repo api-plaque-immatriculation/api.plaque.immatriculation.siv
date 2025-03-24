@@ -1,6 +1,6 @@
-# API Plaque Immatriculation France
+# API Plaque d’Immatriculation Internationale – Données Véhicules en Temps Réel
 
-Cette API permet de récupérer des informations détaillées sur un véhicule à partir de sa plaque d'immatriculation française.
+Obtenez instantanément les informations détaillées d’un véhicule grâce à notre API d’immatriculation performante et flexible. Compatible avec la France, l’Espagne, Royaume-Uni (UK), notre solution vous permet d’accéder en temps réel à plus de 80 champs de données essentielles.
 
 ## Utilisation
 
@@ -11,6 +11,11 @@ Pour interroger l'API, vous devez envoyer une requête POST avec les paramètres
 - `immatriculation` : La plaque d'immatriculation du véhicule (ex: `AA-123-BC`).
 - `token` : Votre token d'authentification (ex: `TokenDemo2025`).
 - `pays` : Le pays de la plaque d'immatriculation (ex: `FR` pour la France).
+
+
+Utilisez le code ISO du pays pour interroger notre API internationale.
+
+Pays :FR 🇫🇷  , ES 🇪🇸 , UK 🇬🇧
 
 ### Exemple de requête en PHP
 
